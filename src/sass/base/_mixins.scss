@@ -1,0 +1,32 @@
+//MEDIA QUERRY MANAGER ---BOOTSTRAP QUERRIES///////////////////
+// landscape phones -- 567px
+
+@mixin phone-land {
+  @media only screen and (min-width: 36em) {
+    @content;
+  }
+}
+@mixin tab-port {
+  @media only screen and (min-width: 48em) {
+    @content;
+  }
+}
+@mixin tab-land {
+  @media only screen and (min-width: 62em) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media only screen and (min-width: 75em) {
+    @content;
+  }
+}
+@mixin verticalHeight {
+  @media only screen and (min-height: 75em) {
+    @content;
+  }
+}
+
+@mixin easeOut {
+  transition: all 0.8s ease-out;
+}

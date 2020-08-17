@@ -1,0 +1,52 @@
+.intro {
+  min-height: calc(100vh - 37px);
+
+  display: flex;
+  flex-direction: column;
+  // border: 5px solid red;
+
+  &__heading {
+    font-size: 4rem;
+
+    @include tab-port {
+      font-size: 6rem;
+    }
+
+    & span {
+      color: $clr-seagull;
+      // font-size: 4rem;
+    }
+  }
+
+  &__description {
+    // border: 1px solid red;
+    float: right;
+    padding: 0 1rem;
+    background-color: $clr-lightgray1;
+    font-weight: 600;
+  }
+
+  &__content {
+    align-self: center;
+    margin-top: 20vh;
+    margin-bottom: auto;
+    position: relative;
+    @include tab-port {
+      margin-top: 30vh;
+    }
+  }
+
+  &__social {
+    // border: 1px solid #000;
+  }
+
+  &__hello {
+    font-size: 4rem;
+    font-weight: 600;
+    color: $clr-seagull;
+
+    @include tab-land {
+      font-size: 6rem;
+    }
+  }
+}
