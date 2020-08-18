@@ -1,7 +1,7 @@
 {
-  "name": "sample-webpack-config",
+  "name": "portfolio-kae",
   "version": "1.0.0",
-  "description": "",
+  "description": "offline forms for data collection ",
   "main": "webpack.dev.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js ",
