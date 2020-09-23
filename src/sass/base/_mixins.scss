@@ -2,25 +2,42 @@
 // landscape phones -- 567px
 
 @mixin phone-land {
-  @media only screen and (min-width: 36em) {
+  @media only screen and (min-width: 400px) {
     @content;
   }
 }
-@mixin tab-port {
-  @media only screen and (min-width: 48em) {
+@mixin phablet {
+  @media only screen and (min-width: 550px) {
     @content;
   }
 }
 @mixin tab-land {
-  @media only screen and (min-width: 62em) {
+  @media only screen and (min-width: 750px) {
     @content;
   }
 }
 @mixin desktop {
-  @media only screen and (min-width: 75em) {
+  @media only screen and (min-width: 1000px) {
     @content;
   }
 }
+@mixin desktop-hd {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin phablet-and-down {
+  @media only screen and (max-width: 550px) {
+    @content;
+  }
+}
+@mixin tab-land-and-down {
+  @media only screen and (max-width: 750px) {
+    @content;
+  }
+}
+
 @mixin verticalHeight {
   @media only screen and (min-height: 75em) {
     @content;

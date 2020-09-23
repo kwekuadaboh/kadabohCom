@@ -1,0 +1,117 @@
+.container {
+  // border: 2px solid #ccc;
+}
+
+.projects {
+  &--intro {
+    // max-width: 560px;
+    // border: 1px solid red;
+
+    & a {
+      border-bottom: 1px solid #000;
+      font-weight: 600;
+    }
+  }
+
+  &--list {
+    // border: 1px solid red;
+  }
+
+  &__item {
+    background-color: $mainWhite;
+    position: relative;
+    // overflow: visible;
+    transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+    border-radius: 2px;
+
+    // padding: 1rem;
+
+    // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    //   0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    // margin-bottom: 2rem;
+    // border: 2px dashed #666;
+
+    &--title {
+      // border: 1px dotted red;
+      margin: 1rem 0;
+      height: 40px;
+      vertical-align: middle;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      // background-color: chartreuse;
+      // position: relative;
+      // z-index: 2;
+    }
+
+    &--action {
+      border-top: 1px solid rgba(160, 160, 160, 0.2);
+      padding: 2rem 1rem;
+      position: relative;
+      z-index: 2;
+      background-color: inherit;
+    }
+
+    &--reveal {
+      display: none;
+      padding: 1rem;
+
+      background-color: inherit;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      z-index: 1;
+      // border: 1px solid #333;
+      // display: none;
+      // transform: translateY(-100%);
+      transform: translateY(0%);
+      // transition: transform 5s ease-in;
+
+      &-close {
+        // border: 1px solid #ccc;
+        cursor: pointer;
+        line-height: 1;
+        padding: 1rem 0;
+      }
+
+      & svg {
+        float: right;
+        font-weight: bold;
+        fill: $mainBlack;
+      }
+    }
+
+    &--shown {
+      display: block;
+      // transition: transform 5s ease-in;
+      transform: translateY(-100%);
+    }
+  }
+
+  &__img {
+    display: block;
+    transition: box-shadow 150ms ease-in-out;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 2px 2px 0 0;
+    // pointer-events: none;
+
+    &:hover {
+      box-shadow: 0 0 0 4px #ddd;
+    }
+  }
+}
+.sticky-action {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}

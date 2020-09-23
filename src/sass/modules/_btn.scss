@@ -1,45 +1,109 @@
 .btn {
-  display: inline-block;
-  // border: 1px solid cyan;
+  position: relative;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
-  &__intro {
-    // margin: 1rem 0;
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #000;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+
+  &--intro {
+    width: 5rem;
+    height: 5rem;
+    // border: 1px solid cyan;
 
     &:first-of-type {
-      margin-right: 2rem;
-
-      @include tab-land {
-        margin-right: 4rem;
-      }
+      margin-right: 4rem;
     }
+
+    @include tab-land {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  &--footer {
+    // border: 1px solid red;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 3rem;
+  }
+
+  &--projects {
+    margin-right: 2rem;
+    // border: 1px solid #444;
+
     &::after {
-      content: "";
-      width: 4rem;
-      height: 4rem;
-      position: absolute;
-      border-radius: 50%;
-      opacity: 0;
-      border: 1px solid #000;
-      text-align: center;
-      left: -4px;
-      top: -4px;
-
-      transition: all 150ms ease-in-out;
+      display: none;
     }
 
-    &:hover::after {
-      opacity: 1;
-      transform: scale(1.3);
+    &:hover {
+      .icon--text::before {
+        transform: translateY(0%);
+      }
     }
   }
 }
 
 .icon {
-  width: 3.5rem;
-  height: 3.5rem;
   fill: $clr-sanJuan;
+
+  &--intro {
+    width: 4rem;
+    height: 4rem;
+
+    @include tab-land {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  &--footer {
+    width: 2.3rem;
+    height: 2.3rem;
+
+    @include tab-land {
+      // width: 3rem;
+      // height: 3rem;
+    }
+  }
+
+  &--projects {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &--text {
+    margin-left: 1rem;
+    line-height: 1.2;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($mainBlack, 0.2);
+      z-index: -1;
+      transform: translateY(95%);
+      transition: transform 0.2s cubic-bezier(1, 0.05, 0.42, 1.12);
+    }
+  }
 }

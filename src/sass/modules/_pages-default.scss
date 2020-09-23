@@ -1,0 +1,15 @@
+.container {
+  // border: 1px solid;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    padding: 3.5rem;
+  }
+}
+
+.main {
+  margin-bottom: auto;
+}

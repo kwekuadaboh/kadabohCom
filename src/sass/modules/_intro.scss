@@ -1,5 +1,5 @@
 .intro {
-  min-height: calc(100vh - 37px);
+  min-height: calc(100vh - 48px);
 
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   &__heading {
     font-size: 4rem;
 
-    @include tab-port {
+    @include phablet {
       font-size: 6rem;
     }
 
@@ -31,7 +31,7 @@
     margin-top: 20vh;
     margin-bottom: auto;
     position: relative;
-    @include tab-port {
+    @include phablet {
       margin-top: 30vh;
     }
   }

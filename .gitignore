@@ -3,5 +3,10 @@ node_modules
 .DS_Store
 webpack.dev.js
 webpack.prod.js
+postcss.config.js
+fonts
+src/images/favicon/
+src/images/icomoon/
+src/images/Testsprites.svg
 
 zmiscellanous.txt

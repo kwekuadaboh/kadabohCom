@@ -1,3 +1,3 @@
 import "../vendorCss/skeleton.css";
 
-console.log("aWelcome from Vendor ");
+// console.log("aWelcome from Vendor ");
