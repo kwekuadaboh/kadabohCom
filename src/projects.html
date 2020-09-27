@@ -36,72 +36,182 @@
   </nav>
 
   <main class="main container">
-    <div class="projects--intro mb-2">
+    <div class="project__head mb-2">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae distinctio aliquam error assumenda! At vel
         ipsa pariatur accusamus minus nobis cumque ab atque corrupti quas.
       </p>
-      <p>The source code for all these projects are <a href="#!">public on GitHub</a></p>
+      <p>The source code for all these projects are
+        <a href="#!" class="link-hoverty project__head--link">public on GitHub</a>
+      </p>
     </div>
 
     <div class="projects--list">
-      <!-- ///////////ROW WITH 2 COLMUNS////////////// -->
       <div class="row">
         <div class="six columns">
-          <!-- ///////////////////Project container -->
-          <div class="projects__item sticky-action" id="activator">
+          <div class="project project-wrap" id="project-wrap">
+            <img src="images/project-1.jpg" alt="Project image" class="project__img img-hover" id="project-img">
 
-            <img src="images/project-1.jpg" alt="Project image" class="projects__img">
-
-            <div class="projects__item--title" id="project-item-title">
-              <span class="title" id="project-title" data-expand>Website Title</span>
-              <svg class="icon icon--projects ">
+            <div class="project__title" id="project-title">
+              <span class="project-title-text" id="project-title-text">Website Title</span>
+              <svg class="icon icon--project">
                 <use xlink:href="/images/sprites.svg#icon-info"></use>
               </svg>
             </div>
 
-            <div class="projects__item--action">
-              <a href="#!" class="btn btn--projects">
-                <svg class="icon icon--projects">
+            <div class="project__action">
+              <a href="#!" class="btn btn--project">
+                <svg class="icon icon--project">
                   <use xlink:href="/images/sprites.svg#icon-github"></use>
                 </svg>
-                <span class="icon--text">GitHub</span>
+                <span class="link-hoverty icon--text">GitHub</span>
               </a>
-              <a href="#!" class="btn btn--projects">
-                <svg class="icon icon--projects">
+              <a href="#!" class="btn btn--project">
+                <svg class="icon icon--project">
                   <use xlink:href="/images/sprites.svg#icon-link"></use>
                 </svg>
-                <span class="icon--text">Visit</span>
+                <span class="link-hoverty icon--text">Visit</span>
               </a>
             </div>
 
-            <div class="projects__item--reveal " id="project-item-reveal">
-              <div class="projects__item--reveal-close clearfix mb-2" id="project-reveal-close">
-                <span>Website Title</span>
-                <svg class="icon icon--projects">
+            <div class="project__info " id="project-info">
+              <div class="project__info-close clearfix" id="project-info-close">
+                <svg class="icon icon--project">
                   <use xlink:href="/images/sprites.svg#lnr-cross"></use>
                 </svg>
               </div>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime vel earum modi quasi fugiat fuga quam.
+              <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime vel earum modi quasi
+                fugiat fuga quam.
                 More INFO
               </p>
             </div>
           </div>
-          <!-- ///////////////////Project container -->
-
         </div>
-        <div class="six columns" style="margin-top: 2rem;">
-          <div class="projects__item">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, nam in. Enim, quas modi ab, cumque soluta
-            eligendi est ducimus tempora, possimus culpa vel voluptates debitis. Excepturi quis mollitia molestias.
+        <div class="six columns">
+          <div class="project project-wrap" id="project-wrap">
+            <img src="images/project-2.jpg" alt="Project image" class="project__img img-hover activator"
+              id="project-img">
+
+            <div class="project__title activator" id="project-title">
+              <span class="project-title-text">Website Title 2</span>
+              <svg class="icon icon--project">
+                <use xlink:href="/images/sprites.svg#icon-info"></use>
+              </svg>
+            </div>
+
+            <div class="project__action">
+              <a href="#!" class="btn btn--project">
+                <svg class="icon icon--project">
+                  <use xlink:href="/images/sprites.svg#icon-github"></use>
+                </svg>
+                <span class="link-hoverty icon--text">GitHub</span>
+              </a>
+              <a href="#!" class="btn btn--project">
+                <svg class="icon icon--project">
+                  <use xlink:href="/images/sprites.svg#icon-link"></use>
+                </svg>
+                <span class="link-hoverty icon--text">Visit</span>
+              </a>
+            </div>
+
+            <div class="project__info " id="project-info">
+              <div class="project__info-close clearfix" id="project-info-close">
+                <svg class="icon icon--project">
+                  <use xlink:href="/images/sprites.svg#lnr-cross"></use>
+                </svg>
+              </div>
+              <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime vel earum modi quasi
+                fugiat fuga quam.
+                More INFO
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
+      <div class="row">
+        <div class="six columns">
+          <div class="project project-wrap" id="project-wrap">
+            <img src="images/project-1.jpg" alt="Project image" class="project__img img-hover activator"
+              id="project-img">
+
+            <div class="project__title activator" id="project-title">
+              <span class="project-title-text">Website Title 4</span>
+              <svg class="icon icon--project">
+                <use xlink:href="/images/sprites.svg#icon-info"></use>
+              </svg>
+            </div>
+
+            <div class="project__action">
+              <a href="#!" class="btn btn--project">
+                <svg class="icon icon--project">
+                  <use xlink:href="/images/sprites.svg#icon-github"></use>
+                </svg>
+                <span class="link-hoverty icon--text">GitHub</span>
+              </a>
+              <a href="#!" class="btn btn--project">
+                <svg class="icon icon--project">
+                  <use xlink:href="/images/sprites.svg#icon-link"></use>
+                </svg>
+                <span class="link-hoverty icon--text">Visit</span>
+              </a>
+            </div>
+
+            <div class="project__info " id="project-info">
+              <div class="project__info-close clearfix" id="project-info-close">
+                <svg class="icon icon--project">
+                  <use xlink:href="/images/sprites.svg#lnr-cross"></use>
+                </svg>
+              </div>
+              <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime vel earum modi quasi
+                fugiat fuga quam.
+                More INFO
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="six columns">
+          <div class="project project-wrap" id="project-wrap">
+            <img src="images/project-2.jpg" alt="Project image" class="project__img img-hover" id="project-img">
+
+            <div class="project__title" id="project-title">
+              <span class="project-title-text" id="project-title-text">Website Title 3</span>
+              <svg class="icon icon--project">
+                <use xlink:href="/images/sprites.svg#icon-info"></use>
+              </svg>
+            </div>
+
+            <div class="project__action">
+              <a href="#!" class="btn btn--project">
+                <svg class="icon icon--project">
+                  <use xlink:href="/images/sprites.svg#icon-github"></use>
+                </svg>
+                <span class="link-hoverty icon--text">GitHub</span>
+              </a>
+              <a href="#!" class="btn btn--project">
+                <svg class="icon icon--project">
+                  <use xlink:href="/images/sprites.svg#icon-link"></use>
+                </svg>
+                <span class="link-hoverty icon--text">Visit</span>
+              </a>
+            </div>
+
+            <div class="project__info " id="project-info">
+              <div class="project__info-close clearfix" id="project-info-close">
+                <svg class="icon icon--project">
+                  <use xlink:href="/images/sprites.svg#lnr-cross"></use>
+                </svg>
+              </div>
+              <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime vel earum modi quasi
+                fugiat fuga quam.
+                More INFO
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-
-
   </main>
+
 
   <footer class="footer">
     <div class="container">
@@ -154,11 +264,6 @@
     </div>
 
   </footer>
-
-
-
-
-
 
 
 </body>

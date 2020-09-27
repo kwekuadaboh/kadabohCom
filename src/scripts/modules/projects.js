@@ -1,36 +1,39 @@
-// const projectTitle = document.getElementById("project-title");
-// const cloneProjectTitle = projectTitle.cloneNode(true);
-const projectRevealClose = document.getElementById("project-reveal-close");
+// const projectInfo = document.querySelectorAll(".project__info");
+const projectImg = document.querySelectorAll(".project__img");
+const projectTitle = document.querySelectorAll(".project__title");
+const projectInfo = document.querySelectorAll(".project__info");
+const projectInfoClose = document.querySelectorAll(".project__info-close");
 
-// projectRevealClose.prepend(
-//   document.getElementById("project-title").cloneNode(true)
-// );
+const projectTText = document.getElementById("project-title-text");
 
-const projectRevealOpen = document.querySelector("#project-item-reveal");
-const projectTitle = document.querySelector("#project-item-title");
-const projectImg = document.querySelector(".projects__img");
+/* for (let i = 0; i < projectImg.length; i++) {
+  projectImg[i].addEventListener("click", function (e) {
+    projectInfo[i].classList.add("project__info-reveal");
+    projectImg[i].classList.remove("img-hover");
+    const projectTitleText = projectTitle[i]
+      .querySelector(".project-title-text")
+      .cloneNode(true);
 
-const activator = document.querySelector("#activator");
+    projectInfoClose[i].prepend(projectTitleText);
+  });
+} */
 
-function projectReveal() {
-  projectRevealOpen.classList.add("projects__item--shown");
+for (let i = 0; i < projectTitle.length; i++) {
+  projectTitle[i].addEventListener("click", function (e) {
+    projectInfo[i].classList.add("project__info-reveal");
+    projectImg[i].classList.remove("img-hover");
+    const projectTitleText = projectTitle[i]
+      .querySelector(".project-title-text")
+      .cloneNode(true);
+
+    projectInfoClose[i].prepend(projectTitleText);
+  });
 }
 
-function projectClose() {
-  projectRevealOpen.classList.remove("projects__item--shown");
+for (let i = 0; i < projectInfoClose.length; i++) {
+  projectInfoClose[i].addEventListener("click", function (e) {
+    projectInfo[i].classList.remove("project__info-reveal");
+    projectImg[i].classList.add("img-hover");
+    projectInfoClose[i].removeChild(projectInfoClose[i].firstChild);
+  });
 }
-
-/* activator.addEventListener("click", function (e) {
-  if ((e.currentTarget = projectTitle)) {
-    projectReveal();
-  } else {
-    projectRevealClose.addEventListener("click", projectClose);
-  }
-}); */
-
-projectTitle.addEventListener("click", projectReveal);
-projectImg.addEventListener("click", projectReveal);
-
-projectRevealClose.addEventListener("click", projectClose);
-
-// console.log(stickyAction);
